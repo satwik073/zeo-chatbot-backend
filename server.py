@@ -3,7 +3,7 @@ from flask_cors import CORS
 import google.generativeai as genai
 
 # Configure Gemini API
-genai.configure(api_key="AIzaSyB-Hibm0kUQMo4AU-0lFSjtwBmyO0WBbU8")
+genai.configure(api_key="AIzaSyDGxKL38vGQK6VfMbzlaesVBppr1pxNQrU")
 
 # Load documentation from a text file
 def read_documentation(file_path):
