@@ -20,7 +20,7 @@ documentation = "\n\n".join([read_documentation(f) for f in files if read_docume
 
 # Initialize Flask app
 app = Flask(__name__)
-CORS(app)  # Allow frontend requests
+CORS(app, resources={r"/*": {"origins": "*"}})
 
 # Root route
 @app.route("/", methods=["GET"])
